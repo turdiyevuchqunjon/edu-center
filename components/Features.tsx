@@ -1,0 +1,42 @@
+export type FeatureItem = {
+  icon: string;
+  title: string;
+  text: string;
+};
+
+type Props = {
+  title?: string;
+  subtitle?: string;
+  items: FeatureItem[];
+};
+
+export default function Features({
+  title = "Afzalliklarimiz",
+  subtitle,
+  items,
+}: Props) {
+  return (
+    <section className="py-20">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-xl mx-auto text-center mb-14">
+          <h2 className="text-3xl font-extrabold mb-3">{title}</h2>
+          {subtitle && <p className="text-slate-500">{subtitle}</p>}
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {items.map((item) => (
+            <div
+              key={item.title}
+              className="bg-slate-50 border border-slate-200 rounded-2xl p-7 hover:shadow-md hover:-translate-y-0.5 transition"
+            >
+              <div className="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl mb-5">
+                {item.icon}
+              </div>
+              <h3 className="font-bold text-lg mb-2">{item.title}</h3>
+              <p className="text-sm text-slate-500">{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
