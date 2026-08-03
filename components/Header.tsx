@@ -25,13 +25,6 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-
-        <a
-          href="tel:+998901234567"
-          className="shrink-0 inline-flex items-center justify-center rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold px-5 py-2.5 transition"
-        >
-          +998 90 123 45 67
-        </a>
       </div>
 
       <div className="lg:hidden overflow-x-auto border-t border-slate-100">
