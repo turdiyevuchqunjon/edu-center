@@ -1,3 +1,5 @@
+import FloatingDoodles from "./FloatingDoodles";
+
 export type FeatureItem = {
   icon: string;
   title: string;
@@ -16,8 +18,9 @@ export default function Features({
   items,
 }: Props) {
   return (
-    <section className="py-20">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="relative overflow-hidden py-20">
+      <FloatingDoodles variant="section" />
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="max-w-xl mx-auto text-center mb-14">
           <h2 className="text-3xl font-extrabold mb-3">{title}</h2>
           {subtitle && <p className="text-slate-500">{subtitle}</p>}
@@ -26,7 +29,7 @@ export default function Features({
           {items.map((item) => (
             <div
               key={item.title}
-              className="bg-slate-50 border border-slate-200 rounded-2xl p-7 hover:shadow-md hover:-translate-y-0.5 transition"
+              className="relative overflow-hidden bg-slate-50 border border-slate-200 rounded-2xl p-7 hover:shadow-md hover:-translate-y-0.5 transition"
             >
               <div className="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl mb-5">
                 {item.icon}

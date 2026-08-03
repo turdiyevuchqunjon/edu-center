@@ -28,7 +28,6 @@ export default function InglizTiliPage() {
           </>
         }
         description="Samarqanddagi o'quvchilarimiz IELTS imtihonini bevosita Samarqand shahrining o'zida topshirishlari mumkin. Imtihon natijalari asosida ular uchun maxsus tayyorgarlik dasturi ham tashkil qilinadi."
-        stats={[{ value: "70+", label: "2025–2026 yuqori darajali sertifikat" }]}
         courseSlug="ingliz-tili"
         courseName="Ingliz tili"
         levels={LEVELS}

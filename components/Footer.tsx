@@ -57,24 +57,16 @@ export default function Footer() {
           <div>
             <h5 className="text-white text-sm font-semibold mb-4">Aloqa</h5>
             <ul className="space-y-2.5 text-sm">
-              <li>
-                <a href="tel:+998901234567" className="hover:text-white">
-                  +998 90 123 45 67
-                </a>
+              <li className="text-slate-400">
+                Samarqand viloyati, Toyloq tumani, Arientir Agro Bank yonida
               </li>
-              <li>
-                <a href="mailto:info@educenter.uz" className="hover:text-white">
-                  info@educenter.uz
-                </a>
-              </li>
-              <li className="text-slate-400">Toshkent sh., Chilonzor tumani</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-slate-800 pt-6 flex flex-wrap justify-between gap-3 text-xs text-slate-500">
           <span>&copy; 2026 EDUCenter. Barcha huquqlar himoyalangan.</span>
-          <span>Toshkent, O&apos;zbekiston</span>
+          <span>Samarqand, O&apos;zbekiston</span>
         </div>
       </div>
     </footer>

@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import type { CourseSlug } from "@/lib/courses";
 import LeadForm from "./LeadForm";
+import FloatingDoodles from "./FloatingDoodles";
 
 type Stat = { value: string; label: string };
 
@@ -34,12 +35,13 @@ export default function SubjectHero({
   ctaLabel = "Ma'lumot uchun",
 }: Props) {
   return (
-    <section className="pt-14 pb-20 bg-gradient-to-b from-brand-50/60 to-white">
+    <section className="relative overflow-hidden pt-14 pb-20 bg-gradient-to-b from-brand-50/60 to-white">
+      <FloatingDoodles variant="hero" />
       <div
         className={
           showForm
-            ? "max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-start"
-            : "max-w-3xl mx-auto px-6"
+            ? "relative z-10 max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-start"
+            : "relative z-10 max-w-3xl mx-auto px-6"
         }
       >
         <div>

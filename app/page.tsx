@@ -6,6 +6,7 @@ import LeadForm from "@/components/LeadForm";
 import Features from "@/components/Features";
 import ImageCarousel from "@/components/ImageCarousel";
 import CenterPolicies from "@/components/CenterPolicies";
+import FloatingDoodles from "@/components/FloatingDoodles";
 
 export const metadata: Metadata = {
   title: "EDUCenter — zamonaviy o'quv markazi",
@@ -51,8 +52,9 @@ export default function HomePage() {
     <>
       <Header />
 
-      <section className="pt-14 pb-20 bg-gradient-to-b from-brand-50/60 to-white">
-        <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-start">
+      <section className="relative overflow-hidden pt-14 pb-20 bg-gradient-to-b from-brand-50/60 to-white">
+        <FloatingDoodles variant="hero" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-start">
           <div>
             <span className="inline-flex items-center gap-2 text-xs font-semibold text-brand-600 bg-brand-50 px-3.5 py-1.5 rounded-full mb-5">
               🎓 5 ta yo&apos;nalish, bitta markaz
@@ -90,8 +92,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden py-20">
+        <FloatingDoodles variant="section" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="max-w-xl mx-auto text-center mb-14">
             <h2 className="text-3xl font-extrabold mb-3">Yo&apos;nalishlarimiz</h2>
             <p className="text-slate-500">Farzandingizga mos fanni tanlang va batafsil ma&apos;lumot oling.</p>

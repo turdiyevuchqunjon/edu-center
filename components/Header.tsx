@@ -15,7 +15,6 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2.5 font-extrabold text-lg shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/001.png" alt="EDUCenter" className="h-10 w-10 object-contain" />
-          EDUCenter
         </Link>
 
         <nav className="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-600 overflow-x-auto">
