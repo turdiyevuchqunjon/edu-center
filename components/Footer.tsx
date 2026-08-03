@@ -58,7 +58,7 @@ export default function Footer() {
             <h5 className="text-white text-sm font-semibold mb-4">Aloqa</h5>
             <ul className="space-y-2.5 text-sm">
               <li className="text-slate-400">
-                Samarqand viloyati, Toyloq tumani, Arientir Agro Bank yonida
+                Samarqand viloyati, Toyloq tumani, Mo&apos;ljal Agro Bank yonida
               </li>
             </ul>
           </div>
