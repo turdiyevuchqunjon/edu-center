@@ -54,41 +54,38 @@ export default function HomePage() {
 
       <section className="relative overflow-hidden pt-14 pb-20 bg-gradient-to-b from-brand-50/60 to-white">
         <FloatingDoodles variant="hero" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-start">
-          <div>
-            <span className="inline-flex items-center gap-2 text-xs font-semibold text-brand-600 bg-brand-50 px-3.5 py-1.5 rounded-full mb-5">
-              🎓 5 ta yo&apos;nalish, bitta markaz
-            </span>
-            <h1 className="text-4xl sm:text-5xl font-extrabold leading-[1.12] mb-5">
-              EDUCenter — farzandingiz kelajagi uchun ishonchli tanlov
-            </h1>
-            <p className="text-lg text-slate-500 max-w-xl mb-8">
-              Ingliz tili, Biologiya-Kimyo, Matematika, Tarix-Huquq va Ona tili
-              yo&apos;nalishlarida tajribali ustozlar, kichik guruhlar va natijaga
-              yo&apos;naltirilgan dastur bilan ta&apos;lim beramiz.
-            </p>
-            <div className="flex flex-wrap gap-8">
-              <div>
-                <b className="block text-2xl font-extrabold">2,400+</b>
-                <span className="text-xs text-slate-400">bitiruvchi</span>
-              </div>
-              <div>
-                <b className="block text-2xl font-extrabold">4.9/5</b>
-                <span className="text-xs text-slate-400">o&apos;rtacha baho</span>
-              </div>
-              <div>
-                <b className="block text-2xl font-extrabold">5</b>
-                <span className="text-xs text-slate-400">yo&apos;nalish</span>
-              </div>
+        <div className="relative z-10 max-w-3xl mx-auto px-6">
+          <span className="inline-flex items-center gap-2 text-xs font-semibold text-brand-600 bg-brand-50 px-3.5 py-1.5 rounded-full mb-5">
+            🎓 5 ta yo&apos;nalish, bitta markaz
+          </span>
+          <h1 className="text-4xl sm:text-5xl font-extrabold leading-[1.12] mb-5">
+            Qisqa muddatda ishonchli natija istaganlar uchun
+          </h1>
+          <p className="text-lg text-slate-500 max-w-xl mb-8">
+            Ingliz tili, Biologiya-Kimyo, Matematika, Tarix-Huquq va Ona tili
+            yo&apos;nalishlarida tajribali ustozlar, kichik guruhlar va natijaga
+            yo&apos;naltirilgan dastur bilan ta&apos;lim beramiz.
+          </p>
+          <a
+            href="#ariza-formasi"
+            className="inline-flex items-center justify-center rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold px-6 py-3 transition mb-8"
+          >
+            Bepul konsultatsiyaga yozilish
+          </a>
+          <div className="flex flex-wrap gap-8">
+            <div>
+              <b className="block text-2xl font-extrabold">2,400+</b>
+              <span className="text-xs text-slate-400">bitiruvchi</span>
+            </div>
+            <div>
+              <b className="block text-2xl font-extrabold">4.9/5</b>
+              <span className="text-xs text-slate-400">o&apos;rtacha baho</span>
+            </div>
+            <div>
+              <b className="block text-2xl font-extrabold">5</b>
+              <span className="text-xs text-slate-400">yo&apos;nalish</span>
             </div>
           </div>
-
-          <LeadForm
-            courseSlug="umumiy"
-            courseName="EDUCenter (umumiy)"
-            title="Bepul konsultatsiyaga yozilish"
-            subtitle="Farzandingiz uchun mos yo'nalishni tanlashda yordam beramiz."
-          />
         </div>
       </section>
 
@@ -121,7 +118,7 @@ export default function HomePage() {
       </section>
 
       <Features
-        title="Nega aynan EDUCenter"
+        title="Nega aynan biz"
         subtitle="Ta'lim sifatini tizimli, qiziqarli va natijaga yo'naltirilgan qilamiz."
         items={[
           {
@@ -172,6 +169,10 @@ export default function HomePage() {
           "c+3.jpg",
           "c+5.jpg",
           "001.jpg",
+          "ingliz/Azizabonu_Alikulova_B2.png",
+          "ingliz/Gulrux_Saloxiddinova_C1.png",
+          "ingliz/Rayhona_Baxronova_B2.png",
+          "ingliz/Zaynura_Ruzimurodova_C1.png",
         ]}
         title="Natijalar va barcha rasmlar"
         subtitle="Logo va hamkor rasmlar ajratilgan, qolgan barcha natija rasmlari ko'rsatiladi."
@@ -204,6 +205,17 @@ export default function HomePage() {
       </section>
 
       <CenterPolicies />
+
+      <section id="ariza-formasi" className="py-20 bg-slate-50">
+        <div className="max-w-lg mx-auto px-6">
+          <LeadForm
+            courseSlug="umumiy"
+            courseName="EDUCenter (umumiy)"
+            title="Bepul konsultatsiyaga yozilish"
+            subtitle="Farzandingiz uchun mos yo'nalishni tanlashda yordam beramiz."
+          />
+        </div>
+      </section>
 
       <Footer />
     </>

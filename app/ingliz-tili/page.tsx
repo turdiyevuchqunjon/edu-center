@@ -5,7 +5,7 @@ import SubjectHero from "@/components/SubjectHero";
 import Features from "@/components/Features";
 import DurationTable from "@/components/DurationTable";
 import LeadForm from "@/components/LeadForm";
-import PartnerBlock from "@/components/PartnerBlock";
+import ImageCarousel from "@/components/ImageCarousel";
 
 export const metadata: Metadata = {
   title: "Ingliz tili kursi — qabul",
@@ -36,10 +36,21 @@ export default function InglizTiliPage() {
         ctaLabel="Ma'lumot uchun"
       />
 
-      <PartnerBlock />
+      <ImageCarousel
+        id="natijalar"
+        images={[
+          "ingliz/Azizabonu_Alikulova_B2.png",
+          "ingliz/Gulrux_Saloxiddinova_C1.png",
+          "ingliz/Rayhona_Baxronova_B2.png",
+          "ingliz/Zaynura_Ruzimurodova_C1.png",
+        ]}
+        title="Natijalar"
+        subtitle="O'quvchilarimizning IELTS natijalari."
+      />
 
       <Features
         title="Afzalliklarimiz"
+        variant="list"
         items={[
           {
             icon: "🎓",
@@ -60,6 +71,11 @@ export default function InglizTiliPage() {
             icon: "📝",
             title: "IELTS tayyorgarligi",
             text: "Innovative Education hamkorligida Samarqandning o'zida IELTS topshirish imkoniyati.",
+          },
+          {
+            icon: "📍",
+            title: "IELTS imtihonini Samarqandda topshirish",
+            text: "Endi IELTS imtihonini boshqa shaharga bormasdan, aynan Samarqandning o'zida qulay va vaqtni tejagan holda topshirish imkoniyatiga ega bo'lasiz.",
           },
           {
             icon: "📊",

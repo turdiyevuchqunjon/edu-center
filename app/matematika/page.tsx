@@ -4,8 +4,9 @@ import Footer from "@/components/Footer";
 import SubjectHero from "@/components/SubjectHero";
 import Features from "@/components/Features";
 import DurationTable from "@/components/DurationTable";
-import ResultsGallery from "@/components/ResultsGallery";
+import ImageCarousel from "@/components/ImageCarousel";
 import CenterPolicies from "@/components/CenterPolicies";
+import LeadForm from "@/components/LeadForm";
 
 export const metadata: Metadata = {
   title: "Matematika kursi — qabul",
@@ -36,6 +37,9 @@ export default function MatematikaPage() {
         courseSlug="matematika"
         courseName="Matematika"
         levels={LEVELS}
+        showForm={false}
+        ctaHref="#ariza-formasi"
+        ctaLabel="Bepul konsultatsiyaga yozilish"
       />
 
       <Features
@@ -83,21 +87,26 @@ export default function MatematikaPage() {
         ]}
       />
 
-      <ResultsGallery
-        title="O'quvchilarimizning DTM va sertifikat natijalari"
-        items={[
-          { initials: "NY", name: "Nilufar Y.", result: "Milliy sertifikat A+" },
-          { initials: "RT", name: "Rustam T.", result: "Milliy sertifikat A" },
-          { initials: "SB", name: "Shahnoza B.", result: "DTM 194 ball" },
-          { initials: "JM", name: "Javlon M.", result: "TATU'ga qabul" },
-          { initials: "KI", name: "Kamron I.", result: "DTM 188 ball" },
-          { initials: "LU", name: "Laylo U.", result: "Milliy sertifikat A" },
-          { initials: "HD", name: "Husan D.", result: "DTM 191 ball" },
-          { initials: "MF", name: "Madina F.", result: "INHA'ga qabul" },
-        ]}
+      <ImageCarousel
+        id="natijalar"
+        images={["c.jpg", "c+.jpg", "c+5.jpg", "c4.jpg", "c5.jpg", "c6.jpg"]}
+        title="Natijalar"
+        subtitle="O'quvchilarimizning DTM va sertifikat natijalari."
       />
 
       <CenterPolicies />
+
+      <section id="ariza-formasi" className="py-20 bg-slate-50">
+        <div className="max-w-lg mx-auto px-6">
+          <LeadForm
+            courseSlug="matematika"
+            courseName="Matematika"
+            levels={LEVELS}
+            subtitle="Qo'shimcha ma'lumotlar uchun ma'lumotlaringizni qoldiring."
+            disclaimer="Mutaxassislarimiz tez orada siz bilan bog'lanishadi."
+          />
+        </div>
+      </section>
 
       <Footer />
     </>

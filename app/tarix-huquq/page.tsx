@@ -6,6 +6,7 @@ import Features from "@/components/Features";
 import DurationTable from "@/components/DurationTable";
 import ResultsGallery from "@/components/ResultsGallery";
 import CenterPolicies from "@/components/CenterPolicies";
+import LeadForm from "@/components/LeadForm";
 
 export const metadata: Metadata = {
   title: "Tarix-Huquq kursi — qabul",
@@ -36,6 +37,9 @@ export default function TarixHuquqPage() {
         courseSlug="tarix-huquq"
         courseName="Tarix-Huquq"
         levels={LEVELS}
+        showForm={false}
+        ctaHref="#ariza-formasi"
+        ctaLabel="Bepul konsultatsiyaga yozilish"
       />
 
       <Features
@@ -98,6 +102,18 @@ export default function TarixHuquqPage() {
       />
 
       <CenterPolicies />
+
+      <section id="ariza-formasi" className="py-20 bg-slate-50">
+        <div className="max-w-lg mx-auto px-6">
+          <LeadForm
+            courseSlug="tarix-huquq"
+            courseName="Tarix-Huquq"
+            levels={LEVELS}
+            subtitle="Qo'shimcha ma'lumotlar uchun ma'lumotlaringizni qoldiring."
+            disclaimer="Mutaxassislarimiz tez orada siz bilan bog'lanishadi."
+          />
+        </div>
+      </section>
 
       <Footer />
     </>

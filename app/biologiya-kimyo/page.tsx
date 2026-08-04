@@ -4,8 +4,9 @@ import Footer from "@/components/Footer";
 import SubjectHero from "@/components/SubjectHero";
 import Features from "@/components/Features";
 import DurationTable from "@/components/DurationTable";
-import ResultsGallery from "@/components/ResultsGallery";
+import ImageCarousel from "@/components/ImageCarousel";
 import CenterPolicies from "@/components/CenterPolicies";
+import LeadForm from "@/components/LeadForm";
 
 export const metadata: Metadata = {
   title: "Biologiya-Kimyo kursi — qabul",
@@ -36,6 +37,9 @@ export default function BiologiyaKimyoPage() {
         courseSlug="biologiya-kimyo"
         courseName="Biologiya-Kimyo"
         levels={LEVELS}
+        showForm={false}
+        ctaHref="#ariza-formasi"
+        ctaLabel="Bepul konsultatsiyaga yozilish"
       />
 
       <Features
@@ -83,21 +87,26 @@ export default function BiologiyaKimyoPage() {
         ]}
       />
 
-      <ResultsGallery
-        title="O'quvchilarimizning DTM va sertifikat natijalari"
-        items={[
-          { initials: "OT", name: "Otabek T.", result: "DTM 189 ball" },
-          { initials: "DM", name: "Dilnoza M.", result: "DTM 192 ball" },
-          { initials: "KS", name: "Kamola S.", result: "Milliy sertifikat A+" },
-          { initials: "FR", name: "Farrux R.", result: "DTM 185 ball" },
-          { initials: "ZY", name: "Zarina Y.", result: "TATU'ga qabul" },
-          { initials: "BN", name: "Bexruz N.", result: "TTA'ga qabul" },
-          { initials: "MG", name: "Muslima G.", result: "DTM 190 ball" },
-          { initials: "AK", name: "Aziz K.", result: "Milliy sertifikat A" },
-        ]}
+      <ImageCarousel
+        id="natijalar"
+        images={["c+ 2.jpg", "001.jpg", "b.jpg", "c+3.jpg", "c2.jpg", "c3.jpg"]}
+        title="Natijalar"
+        subtitle="O'quvchilarimizning DTM va sertifikat natijalari."
       />
 
       <CenterPolicies />
+
+      <section id="ariza-formasi" className="py-20 bg-slate-50">
+        <div className="max-w-lg mx-auto px-6">
+          <LeadForm
+            courseSlug="biologiya-kimyo"
+            courseName="Biologiya-Kimyo"
+            levels={LEVELS}
+            subtitle="Qo'shimcha ma'lumotlar uchun ma'lumotlaringizni qoldiring."
+            disclaimer="Mutaxassislarimiz tez orada siz bilan bog'lanishadi."
+          />
+        </div>
+      </section>
 
       <Footer />
     </>
