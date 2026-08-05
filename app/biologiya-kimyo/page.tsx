@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SubjectHero from "@/components/SubjectHero";
 import Features from "@/components/Features";
-import DurationTable from "@/components/DurationTable";
 import ImageCarousel from "@/components/ImageCarousel";
 import CenterPolicies from "@/components/CenterPolicies";
 import LeadForm from "@/components/LeadForm";
@@ -75,15 +74,6 @@ export default function BiologiyaKimyoPage() {
             title: "Qo'shimcha sayohatlar",
             text: "O'quvchilarimiz uchun davriy ravishda qo'shimcha sayohatlar uyushtiriladi.",
           },
-        ]}
-      />
-
-      <DurationTable
-        title="Bosqichlar va o'qitish muddati"
-        rows={[
-          { level: "Asos bosqichi", duration: "3 oy", desc: "Fan asoslarini tizimli mustahkamlash" },
-          { level: "Chuqurlashtirilgan bosqich", duration: "3 oy", desc: "Murakkab mavzular va masala yechish" },
-          { level: "DTM/Milliy sertifikat tayyorgarligi", duration: "2 oy", desc: "Imtihon formatida intensiv tayyorgarlik" },
         ]}
       />
 
