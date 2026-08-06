@@ -86,7 +86,7 @@ export default function LeadForm({
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 space-y-4"
+      className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-4 shadow-xl shadow-slate-200/50"
     >
       <div>
         <h3 className="text-lg font-bold mb-1">{title}</h3>
@@ -145,7 +145,7 @@ export default function LeadForm({
       <button
         type="submit"
         disabled={loading}
-        className="w-full bg-brand-600 hover:bg-brand-700 disabled:opacity-60 text-white font-semibold py-3.5 rounded-xl transition"
+        className="w-full bg-brand-600 hover:bg-brand-700 disabled:opacity-60 text-white font-semibold py-3.5 rounded-xl shadow-md shadow-brand-600/25 transition hover:shadow-lg hover:-translate-y-0.5"
       >
         {loading ? "Yuborilmoqda..." : "Yuborish"}
       </button>
